@@ -58,9 +58,14 @@ a:hover {
 }
 
 /* ✅ Moved OUTSIDE a:hover */
-.intro-section {
-  text-align: center;
+.intro-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   margin-bottom: 2rem;
+  flex-wrap: wrap; /* responsive fallback */
+  text-align: left;
 }
 
 .headshot {
@@ -70,12 +75,14 @@ a:hover {
   object-fit: cover;
   object-position: top center;
   border: 2px solid #fff;
-  display: block;
-  margin: 0 auto 10px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
+.intro-text h1,
+.intro-text h2,
+.intro-text h3 {
+  margin: 0.2rem 0;
+}
 
 
 </style>
@@ -84,11 +91,13 @@ a:hover {
 
 <body>
 
-<div class="intro-section">
+<div class="intro-row">
   <img src="assets/headshot-centered.jpg" alt="Kareem Khalife" class="headshot" />
-  <h1>Kareem Khalife, BBA</h1>
-  <h2>Business Analyst</h2>
-  <h3>👋 About Me</h3>
+  <div class="intro-text">
+    <h1>Kareem Khalife, BBA</h1>
+    <h2>Business Analyst</h2>
+    <h3>👋 About Me</h3>
+  </div>
 </div>
   
   <p>
