@@ -58,16 +58,23 @@ a:hover {
 }
 
 /* ✅ Moved OUTSIDE a:hover */
+.intro-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .headshot {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   border: 2px solid #fff;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
 
 
 
@@ -77,15 +84,14 @@ a:hover {
 
 <body>
 
-<img src="assets/headshot-centered.jpg" alt="Kareem Khalife" class="headshot" />
+<div class="intro-section">
+  <img src="assets/headshot-centered.jpg" alt="Kareem Khalife" class="headshot" />
   <h1>Kareem Khalife, BBA</h1>
-  <h1>Business Analyst</h1>
-
- 
-
-  <h2>👋 About Me</h2>
+  <h2>Business Analyst</h2>
+  <h3>👋 About Me</h3>
+</div>
+  
   <p>
-
    My name is Kareem Khalife. I graduated in August 2024 from the University of Michigan-Dearborn with a Bachelor of Business Administration (BBA) in Information Systems Management and a concentration in Information Security. work.Over the course of multiple internships I have picked up various skills ranging from Project Management, UI/UX, Product Management, CRM Analytics, and Business Analysis.
   </p>
   
