@@ -10,125 +10,68 @@
 
   <title>Kareem Khalife Portfolio</title>
 
-  <style>
-
+<style>
 body {
-
   max-width: 800px;
-
   margin: 0 auto;
-
   padding: 2rem;
-
   font-family: Arial, sans-serif;
-
   line-height: 1.6;
-
   background: linear-gradient(120deg, #87ceeb, #00bfff, #1e90ff, #00bfff, #87ceeb);
-
   background-size: 200% 200%;
-
   animation: gradientFlow 8s ease-in-out infinite;
-
-  color: #000; /* black text */
-
+  color: #000;
 }
-
- 
 
 @keyframes gradientFlow {
-
-  0% {
-
-    background-position: 0% 50%;
-
-  }
-
-  50% {
-
-    background-position: 100% 50%;
-
-  }
-
-  100% {
-
-    background-position: 0% 50%;
-
-  }
-
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-
- 
 
 h1, h2 {
-
   text-align: center;
-
-  color: #000; /* black headings */
-
+  color: #000;
 }
-
- 
 
 h3 {
-
   margin-top: 2rem;
-
   text-align: left;
-
   color: #000;
-
 }
-
- 
 
 details {
-
   margin-bottom: 1.5rem;
-
-  background: rgba(255, 255, 255, 0.3); /* light background for contrast */
-
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
-
   padding: 10px;
-
-  color: #000; /* black text inside details */
-
+  color: #000;
 }
-
- 
 
 a {
-
-  color: #005f99; /* deep sky blue for links */
-
+  color: #005f99;
   text-decoration: none;
-
 }
 
- 
-
 a:hover {
-
   text-decoration: underline;
+}
 
-  .headshot {
+/* ✅ Moved OUTSIDE a:hover */
+.headshot {
   width: 80px;
   height: 80px;
-  border-radius: 50%; /* Makes it a circle */
+  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff; /* Optional: white outline */
-  position: absolute;
+  border: 2px solid #fff;
+  position: fixed;
   top: 20px;
   left: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
+  overflow: hidden;
 }
-
-}
-
- 
-
-  </style>
+</style>
 
 </head>
 
