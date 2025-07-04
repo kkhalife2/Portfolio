@@ -57,20 +57,28 @@ a:hover {
   text-decoration: underline;
 }
 
-  .headshot {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Adjust this value to align with the red circle */
+  margin-bottom: -30px; /* Optional: pull content closer after image */
+}
+
+.headshot {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 </style>
 </head>
 
 <body>
 
- <img src="assets/headshot.jpg" alt="Headshot" class="headshot" />
+<div class="headshot-container">
+  <img src="assets/headshot.jpg" alt="Headshot" class="headshot" />
+</div>
  <h1>Kareem Khalife, BBA</h1>
  <h2>Business Analyst</h2>
  <h2>👋 About Me</h2>
@@ -102,7 +110,7 @@ a:hover {
 
   <h2>🧐 Highlighted Skills</h2>
 
-  <p><strong>Technical</strong>: SQL, Excel, Salesforce CRM, Github, Azure Devops</p>
+  <p><strong>Technical</strong>: SQL, Excel, Salesforce CRM, GitHub, Azure Devops</p>
 
   <p><strong>Non-Technical</strong>: Documentation, User Acceptance Testing (UAT)</p>
 
