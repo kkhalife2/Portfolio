@@ -17,9 +17,9 @@ body {
   padding: 2rem;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: linear-gradient(270deg, #00bfff, #1e90ff, #0000cd, #00bfff);
-  background-size: 600% 600%;
-  animation: gradientFlow 12s ease-in-out infinite;
+  background: linear-gradient(120deg, #87ceeb, #00bfff, #1e90ff, #00bfff, #87ceeb);
+  background-size: 200% 200%;
+  animation: gradientFlow 8s ease-in-out infinite;
   color: #000;
 }
 
@@ -27,6 +27,17 @@ body {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+h1, h2 {
+  text-align: center;
+  color: #000;
+}
+
+h3 {
+  margin-top: 2rem;
+  text-align: left;
+  color: #000;
 }
 
 details {
@@ -46,22 +57,23 @@ a:hover {
   text-decoration: underline;
 }
 
-.headshot {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+  .headshot {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
 </style>
 </head>
 
 <body>
+
+ <img src="assets/headshot.jpg" alt="Headshot" class="headshot" />
  <h1>Kareem Khalife, BBA</h1>
  <h2>Business Analyst</h2>
  <h2>👋 About Me</h2>
-
   <p>
    My name is Kareem Khalife. I graduated in August 2024 from the University of Michigan-Dearborn with a Bachelor of Business Administration (BBA) in Information Systems Management and a concentration in Information Security. Over the course of multiple internships I have picked up various skills ranging from Project Management, UI/UX, Product Management, CRM Analytics, and Business Analysis.
   </p>
